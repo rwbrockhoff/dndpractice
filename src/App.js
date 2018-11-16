@@ -43,7 +43,8 @@ class App extends Component {
   moveCard = (dragIndex, hoverIndex) => {
 		const { cards } = this.state
 		const dragCard = cards[dragIndex]
-
+    console.log('d', dragIndex, 'i', hoverIndex)
+    console.log(this.state.cards[dragIndex].id, this.state.cards[hoverIndex].id)
 		this.setState(
 			update(this.state, {
 				cards: {
